@@ -1,0 +1,9 @@
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\obj\Debug\TimerC.csprojResolveAssemblyReference.cache
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\obj\Debug\Timer.Properties.Resources.resources
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\obj\Debug\TimerC.csproj.GenerateResource.Cache
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\bin\Debug\Timer.exe.config
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\bin\Debug\Timer.exe
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\bin\Debug\Timer.pdb
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\obj\Debug\Timer.Main.resources
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\obj\Debug\Timer.exe
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\obj\Debug\Timer.pdb

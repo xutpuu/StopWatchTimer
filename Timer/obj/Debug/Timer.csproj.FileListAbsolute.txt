@@ -1,0 +1,1 @@
+c:\users\egor\documents\visual studio 2015\Projects\Timer\Timer\bin\Debug\Timer.exe.config
