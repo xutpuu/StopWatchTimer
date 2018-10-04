@@ -22,6 +22,7 @@ namespace Timer
         {
             timer.Start();
             start = DateTime.Now.AddSeconds(_n);
+            tbTimer.ForeColor = System.Drawing.Color.Black;
         }
 
 
@@ -33,9 +34,24 @@ namespace Timer
         private void timer_Tick(object sender, EventArgs e)
         {
             oldTime = (start - DateTime.Now);
-            tbTimer.Text = oldTime.ToString("c");
-            if (oldTime.Milliseconds == 0)
+
+            if (oldTime.Milliseconds <= -1)
+            {
                 timer.Stop();
+                oldTime = TimeSpan.Zero;
+                tbTimer.ForeColor = System.Drawing.Color.Red;
+                tbTimer.Text = "BOOOOOOOM!";
+            }
+            else
+                tbTimer.Text = oldTime.Seconds.ToString() + ":" + oldTime.Milliseconds.ToString();
+        }
+
+        private void btnStop_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space)
+            {
+                timer.Stop();
+            }
         }
     }
 }

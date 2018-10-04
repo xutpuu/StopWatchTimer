@@ -37,7 +37,9 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(15, 38);
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStart.ForeColor = System.Drawing.Color.Black;
+            this.btnStart.Location = new System.Drawing.Point(12, 65);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 1;
@@ -47,21 +49,28 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(188, 38);
+            this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStop.ForeColor = System.Drawing.Color.Black;
+            this.btnStop.Location = new System.Drawing.Point(194, 65);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 23);
             this.btnStop.TabIndex = 2;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            this.btnStop.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnStop_KeyDown);
             // 
             // tbTimer
             // 
-            this.tbTimer.Location = new System.Drawing.Point(90, 12);
+            this.tbTimer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbTimer.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tbTimer.Location = new System.Drawing.Point(12, 12);
             this.tbTimer.Name = "tbTimer";
             this.tbTimer.ReadOnly = true;
-            this.tbTimer.Size = new System.Drawing.Size(100, 20);
+            this.tbTimer.Size = new System.Drawing.Size(257, 38);
             this.tbTimer.TabIndex = 3;
+            this.tbTimer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // timer
             // 
@@ -72,10 +81,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 74);
+            this.ClientSize = new System.Drawing.Size(281, 100);
             this.Controls.Add(this.tbTimer);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
+            this.ForeColor = System.Drawing.Color.Red;
             this.Name = "Main";
             this.Text = "Form1";
             this.ResumeLayout(false);
